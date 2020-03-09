@@ -103,7 +103,8 @@ html {
 .home-grid-1 {
     grid-column: 1/2;
     height: 100%;
-    background: rgb(8, 8, 8);
+    background: url(../images/about-me-bg.png) rgb(8, 8, 8);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,6 +114,11 @@ html {
 .home-grid-1 ul {
     color: white;
     list-style: none;
+}
+
+.home-grid-1 ul li:nth-child(1) {
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .home-grid-1 ul li {
@@ -154,7 +160,7 @@ html {
     border-radius: 100%;
     height: 300px;
     width: 300px;
-    border: 3px solid rgb(255, 102, 0);
+    border: 3px solid rgb(253, 214, 86);
     margin-bottom: 20px;
 }
 
@@ -170,13 +176,15 @@ html {
     display: grid;
     grid-template-columns: 1.5fr 2fr;
     grid-template-rows: auto;
+    background: url('../images/research-bg.png') rgb(37, 55, 90);
+    background-size: cover;
+    background-position: center;
 }
 
 .research-grid-1 {
     grid-column: 1/2;
     grid-row: 1/2;
     color: white;
-    background: rgb(37, 55, 90);
     font-family: 'Lato';
     display: flex;
     flex-direction: column;
@@ -188,7 +196,7 @@ html {
 .research-grid-1 h1 {
     font-size: 3rem;
     font-weight: 900;
-    color: rgb(60, 177, 255);
+    color: rgb(255, 242, 60);
     margin-bottom: 10px;
     text-align: center;
 }
@@ -218,7 +226,7 @@ html {
 .research-content h1 {
     font-size: 2rem;
     font-weight: 900;
-    color: #16c6dd;
+    color: rgb(255, 242, 60);
     padding-bottom: 10px;
 }
 
@@ -234,9 +242,10 @@ html {
 }
 
 .research-content ul li span {
-    color: #e4405f;
+    color: #ff7214;
     text-decoration: underline;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .home-main-carousel {
@@ -394,7 +403,7 @@ html {
 }
 
 .work-carousel {
-    height: 90%;
+    height: 100%;
     width: 100%;
 }
 
@@ -439,15 +448,14 @@ html {
 }
 
 .data-gather {
-    height: 70vh;
+    height: 100vh;
     width: 100%;
     display: grid;
-    grid-template-columns: 400px auto;
-
+    grid-template-rows: .5fr 2fr;
 }
 
 .data-gather-1 {
-    grid-column: 1/2;
+    grid-row: 1/2;
     background: #202020;
     display: flex;
     flex-direction: column;
@@ -455,35 +463,32 @@ html {
     justify-content: center;
 }
 
-.data-gather-2 {
-    grid-column: 2/3;
-}
-
-
-
-
 .data-gather h1 {
     color: white;
     font-size: 3rem;
     text-align: center;
+    margin: 20px 0;
 }
 
 .data-gathering {
     height: 100%;
+    grid-row: 2/3;
+
 }
 
 .data-1 {
     background: url('../images/data-gather1.jpg');
     height: 100%;
-    width: 100%;
+    width: 50%;
     background-size: cover;
+    background-position: 90%;
     margin: 0 10px;
 }
 
 .data-2 {
     background: url('../images/data-gather2.jpg');
     height: 100%;
-    width: 100%;
+    width: 50%;
     background-size: cover;
     margin: 0 10px;
 }
@@ -491,7 +496,7 @@ html {
 .data-3 {
     background: url('../images/data-gather3.jpg');
     height: 100%;
-    width: 100%;
+    width: 50%;
     background-size: cover;
     margin: 0 10px;
 }
@@ -499,7 +504,7 @@ html {
 .data-4 {
     background: url('../images/data-gather4.jpg');
     height: 100%;
-    width: 100%;
+    width: 50%;
     background-size: cover;
     margin: 0 10px;
 }
@@ -507,7 +512,7 @@ html {
 .data-5 {
     background: url('../images/data-gather5.jpg');
     height: 100%;
-    width: 100%;
+    width: 50%;
     background-size: cover;
     margin: 10px;
 }
@@ -515,7 +520,7 @@ html {
 .data-6 {
     background: url('../images/data-gather6.jpg');
     height: 100%;
-    width: 100%;
+    width: 50%;
     background-size: cover;
     margin: 10px;
 }
@@ -527,6 +532,9 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: url('../images/reflection-bg.png');
+    background-size: cover;
+
 }
 
 .reflection h1 {
