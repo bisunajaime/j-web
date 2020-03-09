@@ -5,199 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justin</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Lato';
-        }
-
-        #part_one {
-            height: 100vh;
-            width: 100%;
-            display: grid;
-            grid-template-columns: 150px auto;
-            grid-template-rows: 100%;
-        }
-
-        #part_one_nav {
-            grid-column: 1/2;
-            grid-row: 1/2;
-            height: 100%;
-            width: 100%;
-            color: white;
-            background-color: rgb(19, 19, 19);
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-            position: static;
-        }
-
-        #part_one_nav ul {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            list-style: none;
-            text-align: center;
-        }
-
-        #part_one_nav ul li {
-            font-weight: 900;
-            padding: 20px 0;
-            margin-bottom: 5px;
-            width: 100%;
-            transition: 0.1s ease;
-        }
-
-        #part_one_nav ul li:hover {
-            background: rgb(255, 112, 60);
-            cursor: pointer;
-            color: black;
-        }
-
-        #part_one_nav ul li i {
-            font-size: 30px;
-        }
-
-        #part_two_nav {
-            font-size: 14px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        #part_two_nav img {
-            border-radius: 100%;
-            width: 60px;
-            height: 60px;
-        }
-
-        #part_two_nav span {
-            margin: 10px 0;
-            font-weight: bold;
-        }
-
-        #part_two_nav p {
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-
-        .body {
-            grid-column: 2/3;
-            width: 100%;
-            background-color: rgb(24, 24, 24);
-            overflow-y: scroll;
-            overflow-x: hidden;
-        }
-
-        .body .home {
-            height: 100vh;
-            background: rgb(42, 41, 44);
-            width: 100%;
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-
-        }
-
-        .home-grid-1 {
-            grid-column: 1/2;
-            height: 100%;
-            background: rgb(8, 8, 8);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .home-grid-1 ul {
-            color: white;
-            list-style: none;
-        }
-
-        .home-grid-1 ul li {
-            margin-bottom: 5px;
-            text-align: center;
-        }
-
-        .home-grid-1 .socials {
-            display: flex;
-            justify-content: space-evenly;
-            width: 50%;
-            margin: 20px 0;
-        }
-
-        .home-grid-1 .socials a {
-            font-size: 2rem;
-        }
-
-        .home-grid-1 .socials a:nth-child(1) {
-            color: #3b5999;
-        }
-
-        .home-grid-1 .socials a:nth-child(2) {
-            color: #e4405f;
-        }
-
-        .home-grid-1 .socials a:nth-child(3) {
-            color: #55acee;
-        }
-
-        .body .home h1 {
-            font-weight: 900;
-            color: white;
-            font-size: 3rem;
-            margin: 20px 0;
-        }
-
-        .home img {
-            border-radius: 100%;
-            height: 300px;
-            width: 300px;
-            border: 3px solid rgb(255, 102, 0);
-            margin-bottom: 20px;
-        }
-
-        .home-carousel {
-            flex: 1;
-            width: 100%;
-
-        }
-
-        .body .targets {
-            height: 100vh;
-            background: beige;
-            width: 100%;
-        }
-
-        .home-main-carousel {
-            background: url('./assets/images/carousel1-bg.png');
-            background-size: cover;
-            width: 600px;
-            height: 95%;
-            margin: 10px;
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        .home-main-carousel h2 {
-            font-size: 2.5rem;
-            color: white;
-            font-weight: 900;
-        }
-
-        .home-main-carousel ul {
-            list-style: none;
-            font-family: 'Lato';
-            font-weight: 700;
-            color: white;
-            font-size: 1.5em;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Permanent+Marker&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
@@ -205,12 +16,25 @@
     <section id="part_one">
         <nav id="part_one_nav">
             <ul>
-                <li><i class="fa fa-home" aria-hidden="true"></i><br /> Home</li>
-                <li><i class="fa fa-book" aria-hidden="true"></i><br /> Targets</li>
-                <li><i class="fa fa-male" aria-hidden="true"></i> <br />About Me</li>
-                <li><i class="fa fa-apple" aria-hidden="true"></i> <br />My Work</li>
-                <li><i class="fa fa-database" aria-hidden="true"></i><br /> Data <br />Gathering</li>
-                <li><i class="fa fa-glass" aria-hidden="true"></i> <br />Reflection</li>
+                <a href="#home">
+                    <li><i class="fa fa-male" aria-hidden="true"></i> <br />About Me
+                    </li>
+                </a>
+                <a href="#research">
+                    <li><i class="fa fa-book" aria-hidden="true"></i><br /> Targets
+                    </li>
+                </a>
+                <a href="#work-carousel">
+                    <li><i class="fa fa-apple" aria-hidden="true"></i> <br />My Work
+                    </li>
+                </a>
+                <a href="#data-gather">
+                    <li><i class="fa fa-database" aria-hidden="true"></i><br /> Data <br />Gathering
+                    </li>
+                </a>
+                <a href="#reflection">
+                    <li><i class="fa fa-glass" aria-hidden="true"></i> <br />Reflection</li>
+                </a>
             </ul>
             <div id="part_two_nav">
                 <img src="assets/images/about-me.PNG" alt="my-image" srcset="">
@@ -219,7 +43,7 @@
             </div>
         </nav>
         <div class="body">
-            <div class="home">
+            <div class="home" id="home">
                 <div class="home-grid-1">
                     <h1>About Me</h1>
                     <img src="assets/images/about-me.PNG" alt="my-image" srcset="">
@@ -228,51 +52,140 @@
                         <li>De La Salle Santiago Zobel Vermosa</li>
                     </ul>
                     <ul class="socials">
-                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                         <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                         <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                     </ul>
                 </div>
                 <div class="home-grid-2">
-                    test
+                    <div class="one-grid">
+                        <h2>School</h2>
+                        <p>De La Salle Santiago Zobel Vermosa</p>
+                    </div>
+                    <div class="five-grid">
+                        <h2>Curricular <br />Activites</h2>
+                        <p>Basketball, Volleyball, Reading, Jiu Jitsu </p>
+                    </div>
+                    <div class="two-grid">
+                        <p>Philosophy in Life</p>
+                        <h2>Do unto others as you would have them do unto you.</h2>
+                    </div>
+                    <div class="three-grid">
+                        <h2>Motto</h2>
+                        <p>Keep moving forward.</p>
+                    </div>
+                    <div class="four-grid">
+                        <h2>Organizations</h2>
+                        <p>Aerospace Cadets of the Philippines, Christ Youth In Action, Deftac Ribeiro Philippines, MOV
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="targets">
-                <h1></h1>
+            <div class="research" id="research">
+                <div class="research-grid-1">
+                    <h1>Research Topic</h1>
+                    <p>The aim of this research is to provide the community with a renewable and clean source of energy
+                        in terms of biomass. <br /><br />As of the moment, the community uses LPG or Liquid Petroleum
+                        Gas and
+                        charcoal; however, these
+                        aren't very cost efficient and environmentally friendly. With the use of banana leaves, a
+                        prominent waste factor in the community, this will be converted into a source of fuel which
+                        is
+                        cost-efficient and environmentally friendly in order to replace the current sources of fuel
+                        used.
+                    </p>
+                </div>
+                <div class="research-grid-2">
+                    <div class="research-content">
+                        <i class="fa fa-line-chart" aria-hidden="true"></i>
+                        <h1>Research 1</h1>
+                        <ul>
+                            <li>Introduction to Research</li>
+                            <li>Production of Chapter 1 <span>(Introduction)</span> </li>
+                            <li>and Chapter 2 <span>(Review or
+                                    Related Literature)</span></li>
+                        </ul>
+                    </div>
+                    <div class="research-content">
+                        <i class="fa fa-pie-chart" aria-hidden="true"></i>
+                        <h1>Research 2</h1>
+                        <ul>
+                            <li>Continuation of the learning targets of</li>
+                            <li>Research 1 and the production of</li>
+                            <li>Chapter 3 <span>(Methodology)</span></li>
+                        </ul>
+                    </div>
+                    <div class="research-content">
+                        <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                        <h1>Research 3</h1>
+                        <ul>
+                            <li>Continuation of the previous learning</li>
+                            <li>targets. Production of Chapters 4 <span>(Data</span></li>
+                            <li><span>Analysis and Interpretation)</span> and</li>
+                            <li>Chapter 5 <span>(Summary of Findings,</span></li>
+                            <li><span>Conclusions and Recommendations)</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="work" id="work-carousel">
+                <div class="work-carousel">
+                    <div class="project-1">
+                        <h3>CARBON MONOXIDE EMISSION ANALYSIS
+                            OF LIQUID PETROLEUM GAS (LPG), CHARCOAL</h3>
+                    </div>
+                    <div class="project-2">
+                        <h3>Musa acuminata (BANANA) LEAVES BIOMASS </h3>
+                    </div>
+                </div>
+                <a href="#">Download PDF</a>
+            </div>
+
+            <div class="data-gather" id="data-gather">
+                <div class="data-gather-1">
+                    <h1>Data <br />Gathering</h1>
+                </div>
+                <div class="data-gathering">
+                    <div class="data-1"></div>
+                    <div class="data-2"></div>
+                    <div class="data-3"></div>
+                    <div class="data-4"></div>
+                    <div class="data-5"></div>
+                    <div class="data-6"></div>
+                </div>
+            </div>
+            <div class="reflection">
+                <h1>Reflection</h1>
+                <p id="reflection"></p>
             </div>
         </div>
     </section>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script>
-        var elem = document.querySelector('.home-carousel');
+        var elem = document.querySelector('.work-carousel');
         var flkty = new Flickity(elem, {
             // options
             contain: true,
             freeScroll: true,
             pageDots: false,
         });
+
+        var dg = document.querySelector('.data-gathering')
+        var dgFlkty = new Flickity(dg, {
+            contain: true,
+            freeScroll: true,
+            pageDots: false,
+        })
+        var res = new Typed("#reflection", {
+            strings: [
+                "Research is such a tedious subject. At first, choosing a topic was very difficult knowing that are so much ways to help the community of Sitio Makabuhay, but we ended up choosing the aspect of energy knowing that one of their main problems is electricity, so we sought for a way to provide a renewable source of energy in terms of biomass. Secondly, creating this research paper took a team's effort to successfully produce this outcome. Lastly, the defence was a success. With the mistakes and problems considered, we were able to deliver the results and recommendations to our panelists. In the end, we are hoping that this research will be approved to fulfil our main goal which is to help the community of Sitio Makabuhay."
+            ],
+            typeSpeed: 10,
+            backSpeed: 0,
+            loop: false,
+        })
     </script>
 </body>
 
 </html>
-
-<!-- <div class="home-carousel">
-    <div class="home-main-carousel">
-        <h2>Curricular Activities</h2>
-        <div class="ca-icons">
-            <i class="basketball"></i>
-            <i class="fight"></i>
-            <i class="volleyball"></i>
-            <i class="reading"></i>
-        </div>
-    </div>
-    <div class="home-main-carousel">
-        <h2>Organization</h2>
-    </div>
-    <div class="home-main-carousel">
-        <h2>Philosophy in Life</h2>
-    </div>
-    <div class="home-main-carousel">
-        <h2>Motto</h2>
-    </div>
-</div> -->
