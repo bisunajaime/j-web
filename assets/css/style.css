@@ -476,7 +476,7 @@ html {
     color: white;
     font-size: 3.5rem;
     text-align: center;
-    margin: 20px 0;
+    margin: 50px 0;
     font-weight: 900;
 }
 
@@ -488,7 +488,7 @@ html {
 
 .data-1 {
     background: url('../images/data-gather1.jpg');
-    height: 100%;
+    height: 80%;
     width: 50%;
     background-size: cover;
     background-position: 90%;
@@ -497,7 +497,7 @@ html {
 
 .data-2 {
     background: url('../images/data-gather2.jpg');
-    height: 100%;
+    height: 80%;
     width: 50%;
     background-size: cover;
     margin: 0 10px;
@@ -505,7 +505,7 @@ html {
 
 .data-3 {
     background: url('../images/data-gather3.jpg');
-    height: 100%;
+    height: 80%;
     width: 50%;
     background-size: cover;
     margin: 0 10px;
@@ -513,7 +513,7 @@ html {
 
 .data-4 {
     background: url('../images/data-gather4.jpg');
-    height: 100%;
+    height: 80%;
     width: 50%;
     background-size: cover;
     margin: 0 10px;
@@ -521,7 +521,7 @@ html {
 
 .data-5 {
     background: url('../images/data-gather5.jpg');
-    height: 100%;
+    height: 80%;
     width: 50%;
     background-size: cover;
     margin: 10px;
@@ -529,7 +529,7 @@ html {
 
 .data-6 {
     background: url('../images/data-gather6.jpg');
-    height: 100%;
+    height: 80%;
     width: 50%;
     background-size: cover;
     margin: 10px;
