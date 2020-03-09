@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Files</title>
+    <link rel="stylesheet" href="./assets/css/files.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section>
+        <nav>
+            <ul>
+                <a href="#one">
+                    <li>Bisuna SR 1</li>
+                </a>
+                <a href="#two">
+                    <li>Bisuna SR 2</li>
+                </a>
+                <a href="#three">
+                    <li>Bisuna SR 3</li>
+                </a>
+                <a href="#four">
+                    <li>Bisuna SR 4</li>
+                </a>
+                <a href="#five">
+                    <li>Bisuna SR 5</li>
+                </a>
+            </ul>
+            <div class="home">
+                <a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i> Back</a>
+            </div>
+        </nav>
+        <div class="pdf-grid">
+            <div class="part-one" id="one">
+                <h1>Bisuna SR 1</h1>
+                <div id="part-one"></div>
+            </div>
+            <div class="part-two" id="two">
+                <h1>Bisuna SR 2</h1>
+                <div id="part-two"></div>
+            </div>
+            <div class="part-three" id="three">
+                <h1>Bisuna SR 3</h1>
+                <div id="part-three"></div>
+            </div>
+            <div class="part-four" id="four">
+                <h1>Bisuna SR 4</h1>
+                <div id="part-four"></div>
+            </div>
+            <div class="part-five" id="five">
+                <h1>Bisuna SR 5</h1>
+                <div id="part-five"></div>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/js/pdfobject.min.js"></script>
+    <script>
+        PDFObject.embed("/downloads/Bisuña SR 1.pdf", "#part-one");
+        PDFObject.embed("/downloads/Bisuña SR 2.pdf", "#part-two");
+        PDFObject.embed("/downloads/Bisuña SR 3.pdf", "#part-three");
+        PDFObject.embed("/downloads/Bisuña SR 4.pdf", "#part-four");
+        PDFObject.embed("/downloads/Bisuña SR 5.pdf", "#part-five");
+    </script>
+</body>
+
+</html>

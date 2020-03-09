@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px auto;
+
+}
+
+nav {
+    grid-column: 1/2;
+    background-color: rgb(19, 19, 19);
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul a {
+    padding: 30px 0;
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    transition: 0.25s ease;
+    width: 100%;
+}
+
+nav ul a:hover {
+    background: rgb(179, 255, 144);
+    color: black;
+}
+
+nav .home {
+    width: 100%;
+}
+
+nav .home a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: 0.25s ease;
+}
+
+nav .home a:hover {
+    background: rgb(255, 204, 64);
+    color: black;
+}
+
+.pdf-grid {
+    height: 100vh;
+    grid-column: 2/3;
+    background: lightblue;
+    overflow-y: scroll;
+}
+
+.part-one {
+    display: grid;
+    grid-template-columns: auto 300px;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    background: rgb(40, 95, 61);
+    color: white;
+}
+
+.part-one h1 {
+    margin: auto;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+
+#part-one {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.part-two {
+    display: grid;
+    grid-template-columns: auto 300px;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    background: rgb(40, 66, 95);
+    color: white;
+}
+
+.part-two h1 {
+    margin: auto;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+#part-two {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.part-three {
+    display: grid;
+    grid-template-columns: auto 300px;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    background: rgb(55, 40, 95);
+    color: white;
+}
+
+.part-three h1 {
+    margin: auto;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+#part-three {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.part-four {
+    display: grid;
+    grid-template-columns: auto 300px;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    background: rgb(95, 40, 40);
+    color: white;
+}
+
+.part-four h1 {
+    margin: auto;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+#part-four {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.part-five {
+    display: grid;
+    grid-template-columns: auto 300px;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    background: rgb(40, 95, 95);
+    color: white;
+}
+
+.part-five h1 {
+    margin: auto;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+#part-five {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
